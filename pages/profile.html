@@ -16,7 +16,7 @@
     <style>
         .container1 {
             border: 0px solid;
-            background-color: #c4e5c0;
+            background-color: #bfe2ea;
 
         }
 
@@ -27,7 +27,7 @@
             display: flex;
             margin-left: 15px;
             /* width: 300px; */
-            background-color: #c4e5c0;
+            background-color: #bfe2ea;
 
         }
 
@@ -42,49 +42,63 @@
         }
 
         .label-cont {
-            border: 0px solid black;
-            /* width: 250px; */
-            background-color: aliceblue;
+            border: 1px solid black;
             display: flex;
+            justify-items: center;
+            max-width: 250px;
+            background-color: aliceblue;
+            
 
         }
 
         .info-cont {
+            align-items: center;
+            justify-content: center;
             border: 0px solid black;
             border-radius: 6px;
-            width: 300px;
+            max-width: 300px;
             padding: 25px;
+            margin-left: 10px;
             /* margin: auto; */
-            background-color: #9ed1c2;
+            background-color: #4472ca;
 
 
         }
 
         .skills {
+            /* display: flex; */
+            justify-content: center;
+            flex: auto;
             margin-left: auto;
-            border: 0px solid black;
+            border: 1px solid black;
             border-radius: 6px;
-            width: 600px;
+            max-width: 600px;
             padding: 25px;
             /* margin: auto; */
-            background-color: #9ed1c2;
+            background-color: #4472ca;
             color: white;
             text-align: center;
 
         }
 
         .main-info-cont {
-            border: 0px solid;
+            border: 1px solid;
             display: flex;
+            
+            /* display: inline-block; */
+            background-color: white;
             /* flex-direction: row; */
+            min-height: 400px;
 
         }
 
         .password-cont {
-            border: 0 px solid;
+            display: flex;
+            justify-content: center;
+            border: 1px solid;
             text-align: center;
             color: white;
-            background-color: #2b4b38;
+            background-color: #92b4f4;
             margin: 10px;
         }
 
@@ -111,7 +125,50 @@
             display: flex;
             margin-left: 12px;
             margin-top: 70px;
+        }
+        button{
+            max-width: 300px
+        }
 
+        @media screen and (max-width: 375px)
+          {
+
+            .main-info-cont{
+                display: inline-block;
+                border: 0px solid;
+            background-color: rgb(108, 14, 14);
+                    }
+            
+        }
+        @media screen and (max-width: 475px)
+          {
+
+            .main-info-cont{
+                display: inline-block;
+                border: 0px solid;
+            background-color: rgb(108, 14, 14);
+                    }
+            
+        }
+        @media screen and (max-width: 575px)
+          {
+
+            .main-info-cont{
+                display: inline-block;
+                border: 0px solid;
+            background-color: rgb(108, 14, 14);
+                    }
+            
+        }
+        @media screen and (max-width: 700px)
+          {
+
+            .main-info-cont{
+                display: inline-block;
+                border: 0px solid;
+                
+                    }
+            
         }
     </style>
 
@@ -226,7 +283,7 @@
                                 <label for="password" class="form-label"></label>
                                 <input type="password" class="form-control" id="password" placeholder="password"
                                     aria-describedby="emailHelp">
-                                <div id="emailHelp" class="form-text">.</div>
+                                <div id="emailHelp" class="form-text"></div>
                             </div>
                             <div class="mb-3">
                                 <label for="exampleInputPassword1" class="form-label"></label>
@@ -236,7 +293,7 @@
                     </label>
                 </div>
 
-                <button id="stretch2" type="submit" class="btn btn-primary">Update</button>
+                <!-- <button id="stretch2" type="submit" class="btn btn-primary">Update</button> -->
                 </form>
 
 
@@ -255,7 +312,7 @@
                 <li>Dry Cleaner</li>
                 <li>Florist</li>
                 <br />
-                <button id="stretch" type="submit" class="btn btn-primary">Edit Skills</button>
+                <!-- <button id="stretch" type="submit" class="btn btn-primary" >Edit Skills</button> -->
             </div>
             <!-- end of third info-cont -->
 
